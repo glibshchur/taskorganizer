@@ -133,7 +133,7 @@ class App extends Component {
                           <p>Task Description: {item.description}</p>
                           <p>Task for: {item.performer}</p>
                           <p>Added by: {item.user}
-                            {item.user === this.state.user.displayName || item.user === this.state.user.email ?
+                            {item.user === this.state.user.displayName || item.user === this.state.user.email || item.user === this.state.performer ?
                               <button onClick={() => this.removeItem(item.id)}>Remove Item</button> : null}
                           </p>
                         </li>
